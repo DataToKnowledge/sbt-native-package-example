@@ -73,6 +73,17 @@ curl http://localhost:9000/ip/8.8.8.8
 curl -X POST -H 'Content-Type: application/json' http://localhost:9000/ip -d '{"ip1": "8.8.8.8", "ip2": "8.8.4.4"}'
 ```
 
+# Deal with private config files
+
+All the private configurations are placed in the project privateconfs
+
+```
+git clone https://github.com/fabiofumarola/privateconfs
+```
+
+copy the file ```private.conf``` in the folder ```src/main/resources``` and
+add the file to ```.gitignore``` file.
+
 
 ## references
 

@@ -13,10 +13,13 @@ project/boot/
 project/plugins/project/
 project/project/target
 project/target
+src/main/resources/private.conf
+
 
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
 
 .idea
+
 
