@@ -4,7 +4,7 @@ Getting Started with Scala / Play on DataToKnowledge
 The project execution is supported by the [sbt-native-packager](http://www.scala-sbt.org/sbt-native-packager/archetypes/java_app/index.html).
 In order to package our java application we need:
 1. install the [sbt-native-packager](https://github.com/sbt/sbt-native-packager) as explained in the doc
-2. create the java binary 
+2. create the java binary
 3. package it with Universal Packager
 4. package it with Docker
 
@@ -23,7 +23,7 @@ In the build.sbt enable the plugin ```JavaAppPackaging```
 enablePlugins(JavaAppPackaging)
 ```
 
-after that if run ```sbt stage``` you will find the folder ```target/universal/stage``` 
+after that if run ```sbt stage``` you will find the folder ```target/universal/stage```
 where there is a compiled version of the project.
 
 ## 3. Package it with the UniversalPackager
@@ -78,11 +78,10 @@ curl -X POST -H 'Content-Type: application/json' http://localhost:9000/ip -d '{"
 All the private configurations are placed in the project privateconfs
 
 ```
-git clone https://github.com/fabiofumarola/privateconfs
+git clone git@github.com:fabiofumarola/privateconfs.git src/main/resources/privateconfs
 ```
 
-copy the file ```private.conf``` in the folder ```src/main/resources``` and
-add the file to ```.gitignore``` file.
+here there is the private file with private confs
 
 
 ## references
